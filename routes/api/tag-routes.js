@@ -29,7 +29,7 @@ router.post('/new', async (req, res) => {
 
 router.put('update/:id', async (req, res) => {
   // update a tag's name by its `id` value
-  const updateTag = await Category.update(req.body, {
+  const updateTag = await Tag.update(req.body, {
     where: {
       id: req.params.id,
     },
@@ -39,6 +39,12 @@ router.put('update/:id', async (req, res) => {
 
 router.delete('delete/:id', async (req, res) => {
   // delete on tag by its `id` value
+  const delTag = await Tag.destroy({
+    where: {
+      id: req.params.id,
+    },
+  });
+  res.json(delTag);
 });
 
 module.exports = router;

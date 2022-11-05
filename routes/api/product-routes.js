@@ -100,7 +100,7 @@ router.put('/update/:id', async (req, res) => {
     });
 });
 
-router.delete('delete/:id', async (req, res) => {
+router.delete('/delete/:id', async (req, res) => {
   // delete one product by its `id` value
   const delPro = await Category.destroy({
     where: {

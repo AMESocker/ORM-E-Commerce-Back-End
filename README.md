@@ -4,7 +4,7 @@ An Object Relational Mapping application in Node.js using npm extensions.
 
 ## Demo of Application
 
-[Video Demo](https://app.castify.com/analyze/261d6383-4f10-4a00-b2d4-ecf02188dfd0)
+[Video Demo](https://app.castify.com/view/261d6383-4f10-4a00-b2d4-ecf02188dfd0)
 
 ## Required Installation
 
